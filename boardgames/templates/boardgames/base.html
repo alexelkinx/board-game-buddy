@@ -1,0 +1,86 @@
+{% load static %}
+{% load django_bootstrap5 %}
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Board Game Buddy{% endblock %}</title>
+    <link rel="icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    {% bootstrap_css %}
+</head>
+
+<body class="d-flex flex-column h-100" style="overflow-y: scroll;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3 shadow-sm border-bottom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'boardgames:home' %}">
+                    <img src="{% static 'images/logo.png' %}" alt="Logo" height="35">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto ms-2 mb-2 mb-lg-0">
+                        <li class="nav-item me-auto ms-2 mb-2 mb-lg-0">
+                            <a class="btn {% if request.resolver_match.url_name == 'category_list' %}active{% endif %} btn-outline-dark"
+                                href="{% url 'boardgames:category_list' %}">Games</a>
+                        </li>
+                        {% if user.is_authenticated %}
+                        <li class="nav-item me-auto ms-2 mb-lg-0">
+                            <a class="btn {% if request.resolver_match.url_name == 'add_game' %}active{% endif %} btn-outline-success"
+                                href="{% url 'boardgames:add_game' %}">Add Game</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                    <ul class="navbar-nav ml-auto ms-2 mb-2 mb-lg-0">
+                        {% if user.is_authenticated %}
+                        <li class="nav-item ml-auto ms-2 mb-2 mb-lg-0">
+                            <a class="btn {% if request.resolver_match.url_name == 'account' %}active{% endif %} btn-outline-dark"
+                                href="{% url 'boardgames:account' %}">Account</a>
+                        </li>
+                        <li class="nav-item ml-auto ms-2 mb-2 mb-lg-0">
+                            <form action="{% url 'boardgames:logout' %}" method="post" style="display: inline;">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-outline-danger">Log Out</button>
+                            </form>
+                        </li>
+                        {% else %}
+                        <li class="nav-item ml-auto ms-2 mb-2 mb-lg-0">
+                            <a class="btn {% if request.resolver_match.url_name == 'register' %}active{% endif %} btn-outline-dark"
+                                href="{% url 'boardgames:register' %}">Register</a>
+                        </li>
+                        <li class="nav-item ml-auto ms-2 mb-2 mb-lg-0">
+                            <a class="btn {% if request.resolver_match.url_name == 'login' %}active{% endif %} btn-outline-dark"
+                                href="{% url 'boardgames:login' %}">Log In</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid mb-auto pt-3" role="main">
+        {% bootstrap_messages %}
+
+        {% block header %}
+        {% endblock %}
+
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="footer mt-5 py-3 bg-light border-top">
+        <div class="container">
+            <p class="mb-0 text-center text-muted">&copy; 2024 Board Game Buddy</p>
+        </div>
+    </footer>
+
+    {% bootstrap_javascript %}
+</body>
+
+</html>

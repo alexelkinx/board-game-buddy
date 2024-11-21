@@ -1,0 +1,47 @@
+[
+  {
+    "model": "boardgames.category",
+    "pk": 1,
+    "fields": {
+      "name": "Adventure",
+      "description": "Adventure games take players on thrilling quests filled with exploration, heroism, and problem-solving. Often set in fantastical or exotic settings, these games immerse players in epic journeys.",
+      "image": "categories/adventure.png"
+    }
+  },
+  {
+    "model": "boardgames.category",
+    "pk": 2,
+    "fields": {
+      "name": "Mafia",
+      "description": "Mafia games delve into the shadowy world of organized crime, featuring themes of deception, strategy, and intrigue. Players may find themselves involved in conspiracies or attempting to outsmart opponents in a criminal setting.",
+      "image": "categories/mafia.png"
+    }
+  },
+  {
+    "model": "boardgames.category",
+    "pk": 3,
+    "fields": {
+      "name": "Detective",
+      "description": "Detective games challenge players to solve complex mysteries, often involving crimes like murders or thefts. Players must gather clues, interrogate suspects, and piece together evidence to uncover the truth.",
+      "image": "categories/detective.png"
+    }
+  },
+  {
+    "model": "boardgames.category",
+    "pk": 4,
+    "fields": {
+      "name": "Space",
+      "description": "Space exploration games transport players to the cosmos, where they embark on interstellar adventures. Objectives often include resource gathering, territory expansion, and navigating the challenges of the universe.",
+      "image": "categories/space.png"
+    }
+  },
+  {
+    "model": "boardgames.category",
+    "pk": 5,
+    "fields": {
+      "name": "Railways",
+      "description": "Railway games focus on the fascinating world of trains, railroads, and transportation networks. Set in various eras, from the industrial revolution to futuristic landscapes, players often aim to build and manage successful rail systems.",
+      "image": "categories/railways.png"
+    }
+  }
+]

@@ -1,0 +1,352 @@
+[
+  {
+    "model": "boardgames.game",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "title": "Lost Ruins of Arnak",
+      "num_players": "1-4",
+      "avg_playing_time": "30-120 min",
+      "min_age": "12+",
+      "description": "Explore the uncharted island of Arnak, where ancient civilizations have left behind secrets waiting to be uncovered. In this thrilling game, you'll lead an expedition to discover lost artifacts, face off against guardians, and solve puzzles. Combining deck-building and worker placement mechanics, players will engage in resource management, tactical decision-making, and exploration. Build your deck, send workers to different locations, and explore the island while balancing your resources. Every game offers a unique challenge, encouraging new strategies with each playthrough. Will you uncover the island's hidden treasures or fall victim to its many dangers?",
+      "image": "games/1.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "title": "Robinson Crusoe: Adventures on the Cursed Island",
+      "num_players": "2-4",
+      "avg_playing_time": "60-120 min",
+      "min_age": "14+",
+      "description": "Survive the harsh conditions of a deserted island in this cooperative adventure game. In Robinson Crusoe: Adventures on the Cursed Island, players are shipwrecked on a mysterious island and must work together to build shelters, gather resources, fend off wild beasts, and protect themselves from unpredictable weather. The game offers rich, narrative-driven gameplay with event cards that shape the island's secrets and challenges. Choose from four distinct roles, including cook, carpenter, explorer, and soldier, and collaborate with your team to explore new scenarios. Will you uncover the island's hidden treasures, or will the island's curses be your undoing?",
+      "image": "games/2.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 3,
+    "fields": {
+      "category": 1,
+      "title": "The Quest for El Dorado",
+      "num_players": "2-4",
+      "avg_playing_time": "30-60 min",
+      "min_age": "10+",
+      "description": "Embark on a thrilling adventure through the dense jungles of South America in search of the legendary land of gold. In The Quest for El Dorado, players take on the roles of expedition leaders, each assembling a team of scouts, scientists, and indigenous helpers. The goal is simple: be the first to reach the golden border and claim the riches! With tactical decision-making and strategic team-building, each player will need to outwit the others to succeed. But be careful, as the jungle is full of surprises and challenges. Will you reach El Dorado first and secure your fortune?",
+      "image": "games/3.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 4,
+    "fields": {
+      "category": 1,
+      "title": "Clank! Legacy: Acquisitions Incorporated",
+      "num_players": "2-4",
+      "avg_playing_time": "60-90 min",
+      "min_age": "13+",
+      "description": "Clank! Legacy: Acquisitions Incorporated brings the excitement of deck-building to the world of legacy-style gameplay. In this thrilling game, players take on the roles of adventurers founding their own franchise of the legendary treasure-hunting company, Acquisitions Incorporated. Over the course of multiple sessions, players will build their deck, customize their game board, and unlock new components, creating a unique campaign that is tailored to the choices of the adventuring party. The stakes are high as players attempt to collect treasure, expand their business, and outwit rival adventurers. Be bold, be strategic, and, most importantly, be ready for the unexpected as the story unfolds.",
+      "image": "games/4.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 5,
+    "fields": {
+      "category": 1,
+      "title": "Frosthaven",
+      "num_players": "1-4",
+      "avg_playing_time": "90-180 min",
+      "min_age": "14+",
+      "description": "Frosthaven tells the story of a small outpost located far to the north of White Oak, struggling to survive in harsh conditions while dealing with numerous threats. As mercenaries, players must help protect the settlement from invaders, including giant Algox and dangerous Lurkers, while exploring new threats and mysteries in the unforgiving frozen wilderness. Featuring 16 new characters, 3 new races, over 100 new items, and a vast campaign of 100 scenarios, Frosthaven is a standalone adventure that expands upon the legacy of Gloomhaven. Will your mercenaries be able to unite the different races to face the larger threats and survive the cold?",
+      "image": "games/5.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 6,
+    "fields": {
+      "category": 2,
+      "title": "Fictions: Memoirs of a Gangster",
+      "num_players": "1-5",
+      "avg_playing_time": "30-90 min",
+      "min_age": "14+",
+      "description": "In Fictions: Memoirs of a Gangster, players step into the shoes of a mafia boss striving for power and control over the city. The goal is to gain enough influence to win the mayoral election by completing tasks and making alliances with other powerful families. Over three scenarios, players will recruit feared gangsters, increase their influence, and engage in strategic gameplay to outsmart their rivals and secure the city for themselves.",
+      "image": "games/6.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 7,
+    "fields": {
+      "category": 2,
+      "title": "Peaky Blinders Escape Game",
+      "num_players": "2-8",
+      "avg_playing_time": "45-180 min",
+      "min_age": "14+",
+      "description": "Inspired by the hit TV series, Peaky Blinders Escape Game lets players help Thomas Shelby's clan achieve great wealth and power. Players work together in this escape-style game to complete various missions and outwit their enemies, all while navigating the treacherous world of 1920s Birmingham.",
+      "image": "games/7.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 8,
+    "fields": {
+      "category": 2,
+      "title": "The Godfather: Corleone's Empire",
+      "num_players": "2-12",
+      "avg_playing_time": "120 min",
+      "min_age": "14+",
+      "description": "The Godfather: Corleone's Empire puts players in the shoes of competing mafia families trying to gain control over New York City's crime networks. Deploy your gangsters, don, and allies to shake down businesses, control turf, and eliminate rivals. The game combines worker placement with area control, as players manage rackets, collect tribute, and engage in drive-by shootings. Will you rule the city by outsmarting your rivals, or will your empire fall to the competition?",
+      "image": "games/8.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 9,
+    "fields": {
+      "category": 2,
+      "title": "Scarface 1920",
+      "num_players": "1-4",
+      "avg_playing_time": "90-150 min",
+      "min_age": "14+",
+      "description": "In Scarface 1920, you lead a gang of mobsters in Prohibition-era Chicago, battling rival gangs for control of the city's underworld. Engage in illegal activities, expand your racketeering empire, and outsmart the law to rise to power. Scarface 1920 mixes worker placement and deck-building mechanics as players recruit associates, make deals, and face off against rival gangs, all while avoiding the Feds. Will you rule the streets or will your criminal empire be toppled?",
+      "image": "games/9.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 10,
+    "fields": {
+      "category": 2,
+      "title": "La Cosa Nostra",
+      "num_players": "3-5",
+      "avg_playing_time": "90 min",
+      "min_age": "16+",
+      "description": "La Cosa Nostra puts you in the shoes of a mafia boss looking to expand your empire. Build your criminal network, control businesses, and engage in shady deals to grow your power. The game mixes negotiation, bluffing, and strategic play, as players form temporary alliances and backstab one another in a race to accumulate the most wealth. The more ruthless you are, the higher your chances of winning, but trust no one – they will betray you in the end.",
+      "image": "games/10.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 11,
+    "fields": {
+      "category": 3,
+      "title": "Mansions of Madness",
+      "num_players": "1-5",
+      "avg_playing_time": "120-180 min",
+      "min_age": "14+",
+      "description": "Mansions of Madness: Second Edition is a cooperative, app-driven horror game set in the universe of Arkham Horror. Players must work together as investigators to uncover the truth behind terrifying mysteries while battling monsters, solving puzzles, and managing their sanity. The game features immersive storylines, dynamic scenarios, and an app that guides the players through their investigations. Can you survive the horrors lurking within the cursed mansions?",
+      "image": "games/11.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 12,
+    "fields": {
+      "category": 3,
+      "title": "Deception: Murder in Hong Kong",
+      "num_players": "4-12",
+      "avg_playing_time": "20 min",
+      "min_age": "14+",
+      "description": "In Deception: Murder in Hong Kong, players are investigators working to solve a murder case, but one of them is the killer! The Forensic Scientist provides cryptic clues through scene tiles, while the murderer and accomplices mislead the group. Can the investigators decipher the clues and uncover the truth, or will the murderer get away with the crime? This fast-paced game of deduction and deception is a battle of wits.",
+      "image": "games/12.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 13,
+    "fields": {
+      "category": 3,
+      "title": "Sherlock Holmes Consulting Detective",
+      "num_players": "1-8",
+      "avg_playing_time": "60-120 min",
+      "min_age": "13+",
+      "description": "Have you ever had the desire to walk the streets of Victorian London with Sherlock Holmes in search of Professor Moriarty? To search the docks for the giant rat of Sumatra? To walk up Baker Street as the fog is rolling in and hear Holmes cry out, \"Come, Watson, come! The game is afoot!\"? Now you can! You can enter the opium den beneath the Bar of Gold, but beware, that may be Colonel Sebastian Moran lurking around the corner. You can capture the mystery and excitement of Holmes' London in this challenging and informative game. You, the player, will match your deductive abilities against your opponents and the master sleuth himself, Sherlock Holmes. In Sherlock Holmes Consulting Detective, you are presented with a mystery to solve, and it is then up to you to trace the threads of evidence through the byways and mansions of nineteenth century London. You will interview suspects, search the newspapers for clues, and put together the facts to reach a solution. Why were two lions murdered in Hyde Park? Who is responsible for the missing paintings from the National Gallery? Who murdered Oswald Mason and why? These are just a few of the cases that will challenge your ingenuity and deductive abilities. This is not a board game: No dice, no luck, but a challenge to your mental ability. The game has been thoroughly researched for Holmesian and Victorian accuracy so as to capture a feeling of that bygone era.",
+      "image": "games/13.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 14,
+    "fields": {
+      "category": 3,
+      "title": "Blood on the Clocktower",
+      "num_players": "6-21",
+      "avg_playing_time": "30-120 min",
+      "min_age": "15+",
+      "description": "In the quiet village of Ravenswood Bluff, a demon walks amongst you. During a hellish thunderstorm, on the stroke of midnight, there echoes a bone-chilling scream. The townsfolk rush to investigate and find the town storyteller murdered, their body impaled on the hands of the clocktower, blood dripping onto the cobblestones below. A Demon is on the loose, murdering by night and disguised in human form by day. Some have scraps of information. Others have abilities that fight the evil or protect the innocent. But the Demon and its evil minions are spreading lies to confuse and breed suspicion. Will the good townsfolk put the puzzle together in time to execute the true demon and save themselves? Or will evil overrun this once peaceful village? Blood on the Clocktower is a bluffing game with players on opposing teams of Good and Evil, overseen by a Storyteller player who conducts the action and makes crucial decisions. The goal of the game is to successfully deduce and execute the demons before they outnumber the townfolk.",
+      "image": "games/14.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 15,
+    "fields": {
+      "category": 3,
+      "title": "MicroMacro: Crime City",
+      "num_players": "1-4",
+      "avg_playing_time": "15-45 min",
+      "min_age": "12+",
+      "description": "Crimes have taken place all over the city, and you want to figure out exactly what's happened, so you'll need to look closely at the giant city map (75 x 110 cm / 29.5 x 43 inches) to find all the hidden information and trace the trails of those who had it in for their foes. MicroMacro: Crime City includes 16 cases for you to solve. Each case includes a number of cards that ask you to find something on the map or uncover where someone has gone or otherwise reveal information relevant to a case. The city map serves as a map in time as well as space, so you'll typically find people in multiple locations throughout the streets and buildings, and you need to piece together what happened, whether by going through the case card by card or by reading only the starting card in the case and trying to figure out everything that happened for yourself. Will you be able to answer all questions about the case without fail? The second edition of MicroMacro: Crime City now marks each case with symbols so that parents can decide which cases the youngest investigators are cleared to research.",
+      "image": "games/15.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 16,
+    "fields": {
+      "category": 4,
+      "title": "Star Wars: Rebellion",
+      "num_players": "2-4",
+      "avg_playing_time": "180-240 min",
+      "min_age": "14+",
+      "description": "Star Wars: Rebellion is a board game of epic conflict between the Galactic Empire and Rebel Alliance for two to four players. Experience the Galactic Civil War like never before. In Rebellion, you control the entire Galactic Empire or the fledgling Rebel Alliance. You must command starships, account for troop movements, and rally systems to your cause. Given the differences between the Empire and Rebel Alliance, each side has different win conditions, and you'll need to adjust your play style depending on who you represent: As the Imperial player, you can command legions of Stormtroopers, swarms of TIEs, Star Destroyers, and even the Death Star. You rule the galaxy by fear, relying on the power of your massive military to enforce your will. To win the game, you need to snuff out the budding Rebel Alliance by finding its base and obliterating it. Along the way, you can subjugate worlds or even destroy them. As the Rebel player, you can command dozens of troopers, T-47 airspeeders, Corellian corvettes, and fighter squadrons. However, these forces are no match for the Imperial military. In terms of raw strength, you'll find yourself clearly overmatched from the very outset, so you'll need to rally the planets to join your cause and execute targeted military strikes to sabotage Imperial build yards and steal valuable intelligence. To win the Galactic Civil War, you'll need to sway the galaxy's citizens to your cause. If you survive long enough and strengthen your reputation, you inspire the galaxy to a full-scale revolt, and you win.",
+      "image": "games/16.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 17,
+    "fields": {
+      "category": 4,
+      "title": "On Mars",
+      "num_players": "1-4",
+      "avg_playing_time": "90-150 min",
+      "min_age": "14+",
+      "description": "Following the success of unmanned rover missions, the United Nations established the Department of Operations and Mars Exploration (D.O.M.E.). The first settlers arrived on Mars in the year 2037 and in the decades after establishment of Mars Base Camp, private exploration companies began work on the creation of a self-sustaining colony. As chief astronaut for one of these enterprises, you want to be a pioneer in the development of the biggest, most advanced colony on Mars by achieving both D.O.M.E. mission goals as well as your company’s private agenda. In the beginning, you will be dependent on supplies from Earth and will have to travel often between the Mars Space Station and the planet's surface. As the colony expands over time, you will shift your activities to construct mines, power generators, water extractors, greenhouses, oxygen factories, and shelters. Your goal is to develop a self-sustaining colony independent of any terrestrial organization. This will require understanding the importance of water, air, power, and food — the necessities for survival. Do you dare take part in humankind’s biggest challenge?",
+      "image": "games/17.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 18,
+    "fields": {
+      "category": 4,
+      "title": "Eclipse: Second Dawn for the Galaxy",
+      "num_players": "2-6",
+      "avg_playing_time": "60-200 min",
+      "min_age": "14+",
+      "description": "A game of Eclipse places you in control of a vast interstellar civilization, competing for success with its rivals. You explore new star systems, research technologies, and build spaceships with which to wage war. There are many potential paths to victory, so you need to plan your strategy according to the strengths and weaknesses of your species, while paying attention to the other civilizations' endeavors.",
+      "image": "games/18.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 19,
+    "fields": {
+      "category": 4,
+      "title": "Gaia Project",
+      "num_players": "1-4",
+      "avg_playing_time": "60-150 min",
+      "min_age": "12+",
+      "description": "Gaia Project is a new game in the line of Terra Mystica. As in the original Terra Mystica, fourteen different factions live on seven different kinds of planets, and factions are bound to their own home planets, so to develop and grow, they must terraform neighboring planets into their home environments in competition with the other groups. In addition, Gaia Project adds new elements, such as new technologies, in-depth upgrades to the old races, a new map with even more competition, and other features.",
+      "image": "games/19.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 20,
+    "fields": {
+      "category": 4,
+      "title": "Twilight Imperium",
+      "num_players": "3-6",
+      "avg_playing_time": "240-480 min",
+      "min_age": "14+",
+      "description": "Twilight Imperium is a strategy game of galactic conquest. The game revolves around players competing for dominance of the galaxy through politics, diplomacy, and military might. Players command vast spacefaring empires, each with its unique abilities and characteristics, and they must manage alliances, navigate conflicts, and achieve victory conditions that can vary from game to game. The game is known for its deep strategy, epic length, and immersive experience, with many players participating in lengthy campaigns where alliances can shift and backstabbing is common. The dynamic nature of Twilight Imperium's rules and the unpredictability of player interactions make each playthrough a unique experience.",
+      "image": "games/20.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 21,
+    "fields": {
+      "category": 5,
+      "title": "Brass: Birmingham",
+      "num_players": "2-4",
+      "avg_playing_time": "60-120 min",
+      "min_age": "14+",
+      "description": "Brass: Birmingham is an economic strategy game sequel to Martin Wallace's 2007 masterpiece, Brass. Brass: Birmingham tells the story of competing entrepreneurs in Birmingham during the industrial revolution between the years of 1770 and 1870.\n\nIt offers a very different story arc and experience from its predecessor. As in its predecessor, you must develop, build and establish your industries and network in an effort to exploit low or high market demands. The game is played over two halves: the canal era (years 1770-1830) and the rail era (years 1830-1870). To win the game, score the most VPs. VPs are counted at the end of each half for the canals, rails and established (flipped) industry tiles.",
+      "image": "games/21.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 22,
+    "fields": {
+      "category": 5,
+      "title": "Russian Railroads",
+      "num_players": "2-4",
+      "avg_playing_time": "120 min",
+      "min_age": "13+",
+      "description": "In Russian Railroads, players compete in an exciting race to build the largest and most advanced railway network. In order to do so, the players appoint their workers to various important tasks.\n\nThe development of simple tracks will quickly bring the players to important places, while the modernization of their railway network will improve the efficiency of their machinery. Newer locomotives cover greater distances and factories churn out improved technology. Engineers, when used effectively, can be the extra boost that an empire needs to race past the competition.\n\nThere are many paths to victory: Who will ride into the future full steam ahead and who will be run off the rails? Whose empire will overcome the challenges ahead and emerge victorious?",
+      "image": "games/22.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 23,
+    "fields": {
+      "category": 5,
+      "title": "Age of Steam",
+      "num_players": "1-6",
+      "avg_playing_time": "121 min",
+      "min_age": "13+",
+      "description": "Steam-belching iron horses roar across the wild plains! Age of Steam relives the era when pioneering U.S. railroads built the tracks that transformed America's economy. The cut-throat action is centered on the industrial powerhouses of the growing nation: Pittsburgh, Cincinnati, Chicago, and beyond.\n\nChallenges that await you:\n\nCan you finance both the most extensive track network and the most powerful locomotives?\nWhich routes will give the best returns on their costs?\nCan you beat the opposition to the most lucrative shipments?\nWill you make enough money to pay your aggressive creditors?\n\nCompetition is brutal, with the game usually going to the player who plans most carefully.\n\nEach self-contained phase in the game keeps players constantly involved in making vital decisions and interacting with other players. Age of Steam also allows towns to be developed into cities, ensuring that no two games are exactly the same.",
+      "image": "games/23.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 24,
+    "fields": {
+      "category": 5,
+      "title": "Ticket to Ride: Europe",
+      "num_players": "2-5",
+      "avg_playing_time": "30-60 min",
+      "min_age": "8+",
+      "description": "Ticket to Ride: Europe takes you on a new train adventure across Europe. From Edinburgh to Constantinople and from Lisbon to Moscow, you'll visit great cities of turn-of-the-century Europe. Like the original Ticket to Ride, the game remains elegantly simple, can be learned in 5 minutes, and appeals to both families and experienced gamers. Ticket to Ride: Europe is a complete, new game and does not require the original version.\n\nMore than just a new map, Ticket to Ride: Europe features brand new gameplay elements. Tunnels may require you to pay extra cards to build on them, Ferries require locomotive cards in order to claim them, and Stations allow you to sacrifice a few points in order to use an opponent's route to connect yours. The game also includes larger format cards and Train Station game pieces.\n\nThe overall goal remains the same: collect and play train cards in order to place your pieces on the board, attempting to connect cities on your ticket cards. Points are earned both from placing trains and completing tickets but uncompleted tickets lose you points. The player who has the most points at the end of the game wins.",
+      "image": "games/24.jpg",
+      "owner": 1
+    }
+  },
+  {
+    "model": "boardgames.game",
+    "pk": 25,
+    "fields": {
+      "category": 5,
+      "title": "Railways of the World",
+      "num_players": "2-6",
+      "avg_playing_time": "120 min",
+      "min_age": "10+",
+      "description": "Railways of the World (2009) is the new edition of the base game for Eagle Games' popular Railways of the World series, first published as Railroad Tycoon in 2005. It reimplements the original game with several improvements.\n\nRevisit the early days of the Age of Steam as you begin with a locomotive (the venerable John Bull, the first locomotive to run in North America) and a vision (your Tycoon 'mission' card). From there, build your budding railroad network into a vast empire. Connect New York to Chicago, earn the most money, develop bigger and faster locomotives and maybe even span North America and build the Transcontinental Railway!\n\nMultiple expansions featuring different maps are available. Railways of the World is the new base game for the system and includes the engine placards, railroad tiles, train tokens, money, bonds, and other items that are needed in almost all the Railways of the World series. A gameboard depicting the eastern half of the United States is included in the base game, as well as a mounted map of Mexico.",
+      "image": "games/25.jpg",
+      "owner": 1
+    }
+  }
+]

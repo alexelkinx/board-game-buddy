@@ -1,0 +1,19 @@
+{% extends 'boardgames/base.html' %}
+
+{% block title %}
+Delete Game | Board Game Buddy
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mb-4 text-center">Delete Game</h1>
+
+    <p>Are you sure you want to delete the game "{{ game.title }}"?</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Yes, Delete</button>
+        <a href="{% url 'boardgames:account' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}

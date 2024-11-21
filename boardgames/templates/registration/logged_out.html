@@ -1,0 +1,18 @@
+{% extends 'boardgames/base.html' %}
+
+{% block title %}
+Logged Out | Board Game Buddy
+{% endblock %}
+
+{% block content %}
+<div class="px-4 py-5 my-5 text-center">
+    <h1 class="h2 fw-normal text-body-emphasis">You have been logged out</h1>
+    <p class="lead mb-4 text-muted">We hope to see you again soon. If you want to continue your journey with us, please
+        log in again.</p>
+
+    <div class="d-grid gap-2 d-sm-flex justify-content-center">
+        <a href="{% url 'boardgames:login' %}" class="btn btn-outline-success btn-lg">Log In Again</a>
+        <a href="{% url 'boardgames:home' %}" class="btn btn-outline-primary btn-lg">Back to Home</a>
+    </div>
+</div>
+{% endblock %}

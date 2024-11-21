@@ -1,0 +1,50 @@
+{% extends 'boardgames/base.html' %}
+
+{% block title %}
+Login | Board Game Buddy
+{% endblock title %}
+
+{% block content %}
+<section class="form-signin d-flex justify-content-center align-items-center m-3">
+    <form method="post" action="{% url 'boardgames:login' %}" class="w-100" style="max-width: 300px;">
+        <h1 class="h2 mb-3 fw-normal text-center">Please log in</h1>
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ request.GET.next }}">
+        <div class="form-floating mb-3">
+            <input id="floatingInput" class="form-control {% if form.username.errors %}is-invalid{% endif %}"
+                name="username" type="text" placeholder="Username" value="{{ form.username.value|default_if_none:'' }}"
+                required>
+            <label for="floatingInput">Username</label>
+            {% if form.username.errors %}
+            <div class="invalid-feedback">
+                {% for error in form.username.errors %}
+                <p>{{ error }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        <div class="form-floating mb-3">
+            <input id="floatingPassword" class="form-control {% if form.password.errors %}is-invalid{% endif %}"
+                name="password" type="password" placeholder="Password" required>
+            <label for="floatingPassword">Password</label>
+            {% if form.password.errors %}
+            <div class="invalid-feedback">
+                {% for error in form.password.errors %}
+                <p>{{ error }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        {% if form.non_field_errors %}
+        <div class="alert alert-danger mt-2">
+            {% for error in form.non_field_errors %}
+            <p>{{ error }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <button class="btn btn-success w-100 py-2" type="submit">Log in</button>
+        <p class="mt-5 mb-3 text-center text-body-secondary">Don't have an account? <a class="link-success"
+                href="{% url 'boardgames:register' %}">Register here</a>.</p>
+    </form>
+</section>
+{% endblock %}

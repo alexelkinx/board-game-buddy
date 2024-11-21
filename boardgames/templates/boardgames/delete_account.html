@@ -1,0 +1,21 @@
+{% extends 'boardgames/base.html' %}
+
+{% block title %}
+Confirm Account Deletion | Board Game Buddy
+{% endblock %}
+
+{% block content %}
+<div class="container text-center mt-5">
+    <h1 class="text-danger">Delete Account</h1>
+    <p class="lead">Are you sure you want to delete your account? This action cannot be undone.</p>
+
+    <form action="{% url 'boardgames:delete_account' %}" method="post">
+        {% csrf_token %}
+
+        <div class="d-grid gap-2 d-sm-flex justify-content-center mt-4">
+            <button type="submit" class="btn btn-danger btn-lg">Yes, Delete My Account</button>
+            <a href="{% url 'boardgames:account' %}" class="btn btn-secondary btn-lg">Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

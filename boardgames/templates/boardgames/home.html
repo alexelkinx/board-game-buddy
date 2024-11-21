@@ -1,0 +1,21 @@
+{% extends 'boardgames/base.html' %}
+{% load static %}
+
+{% block title %}
+Home | Board Game Buddy
+{% endblock %}
+
+{% block header %}
+<section class="px-4 pt-4 text-center">
+    <img class="d-block mx-auto mb-4 rounded" src="{% static 'images/home.png' %}" alt="Home" height="280">
+    <h1 class="display-4 fw-bold text-body-emphasis mb-3">Welcome to Board Game Buddy!</h1>
+    <p class="lead mb-4">Come and join us! Explore our exciting collection of board games and become a part of our
+        vibrant community of gamers.</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-center">
+        <a class="btn btn-lg btn-outline-success px-4 py-2 mb-2 mb-sm-0" href="{% url 'boardgames:register' %}"
+            role="button">Register Now</a>
+        <a class="btn btn-lg btn-outline-success px-4 py-2" href="{% url 'boardgames:category_list' %}"
+            role="button">Explore Games</a>
+    </div>
+</section>
+{% endblock %}
