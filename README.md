@@ -1,17 +1,21 @@
 # Board Game Buddy
 
+[![Python](https://img.shields.io/badge/Python-3.x-blue)](https://www.python.org/)
+[![Django](https://img.shields.io/badge/Django-3.x-green)](https://www.djangoproject.com/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.x-purple?logo=bootstrap)](https://getbootstrap.com/)
+[![SQLite](https://img.shields.io/badge/SQLite-3.x-lightgrey?logo=sqlite)](https://www.sqlite.org/)
+
 ## Overview
 
-**Board Game Buddy** is a Django-based web application designed to help groups of friends manage their board game collections and lending activities. The application keeps track of board games, users (gamers), and loan statuses. It allows users to:
+**Board Game Buddy** is a Django-based web application that helps groups of friends manage board game collections and lending. Users can register, add and manage games, borrow up to 3 at a time, and track history.
 
-- Register and manage their accounts.
-- Add, edit, and delete their board games.
-- View all games available in the system.
-- Borrow currently available games (up to 3 at a time).
-- Return games they have borrowed.
-- View lending and borrowing histories.
+## Features
 
-The system ensures a gamer cannot borrow more than three games simultaneously, prompting them to return one before borrowing another. It also records the creation and modification timestamps for all data, enabling users to track who borrowed a game and when.
+- User registration and authentication
+- Add, edit, and delete games
+- Browse games by category
+- Borrow/return with a 3-game limit
+- Timestamps for tracking activity
 
 ---
 
@@ -20,12 +24,8 @@ The system ensures a gamer cannot borrow more than three games simultaneously, p
 - Python 3.x
 - Django
 - SQLite
-- HTML5, CSS3
 - Bootstrap 5
-
-🛠️ The project also uses Django's built-in testing framework (`TestCase`) for basic unit tests.
-
----
+- HTML5 & CSS3
 
 ## Screenshots
 
@@ -33,25 +33,17 @@ The system ensures a gamer cannot borrow more than three games simultaneously, p
 
 ![Home Page](assets/home_page.png)
 
----
-
 <h3 align="center">Category List</h3>
 
 ![Category List](assets/category_list.png)
-
----
 
 <h3 align="center">Game List in Category</h3>
 
 ![Game List](assets/game_list.png)
 
----
-
 <h3 align="center">Game Detail Page</h3>
 
 ![Game Detail](assets/game_detail.png)
-
----
 
 <h3 align="center">Registration Page</h3>
 
@@ -59,44 +51,13 @@ The system ensures a gamer cannot borrow more than three games simultaneously, p
 
 ## Directory Structure
 
-```
-board-game-buddy/
-├── assets/                         # Screenshots used in README
-├── bgb_project/                    # Django project folder
-│   ├── __init__.py
-│   ├── asgi.py                     # ASGI configuration
-│   ├── settings.py                 # Project settings
-│   ├── urls.py                     # Root URL configuration
-│   └── wsgi.py                     # WSGI configuration for deployment
-├── boardgames/                     # Main app for the Board Game Buddy functionality
-│   ├── fixtures/                   # JSON files for initial data (e.g., default categories, games)
-│   │   └── example_data.json
-│   ├── migrations/                 # Database migrations
-│   │   └── __init__.py
-│   ├── static/                     # Static files for the boardgames app
-│   │   ├── images/
-│   │   │   └── logo.png
-│   │   └── favicon.ico
-│   ├── templates/                  # Templates for the boardgames app
-│   │   └── boardgames/
-│   │       ├── base.html
-│   │       ├── game_detail.html
-│   │       └── edit_game.html
-│   ├── __init__.py
-│   ├── admin.py                    # Admin interface for models
-│   ├── apps.py                     # App configuration
-│   ├── forms.py                    # Forms for user input (e.g., GameForm, ProfileForm)
-│   ├── models.py                   # Database models for BoardGame, Loan, and Gamer
-│   ├── signals.py                  # Signals for handling model events (e.g., post-save actions)
-│   ├── tests.py
-│   ├── urls.py                     # App-specific URL configuration
-│   └── views.py                    # Views for handling HTTP requests
-├── media/                          # User-uploaded files (e.g., images for profiles or games)
-├── .gitignore
-├── manage.py                       # Django management script
-├── README.md
-└── requirements.txt                # Python dependencies for the project
-```
+The project follows standard Django structure, including:
+
+- `bgb_project/`: project configuration
+- `boardgames/`: main app with models, views, templates, and forms
+- `fixtures/`: example data in JSON
+- `media/`: user-uploaded files
+- `requirements.txt`: project dependencies
 
 ## Getting Started
 
@@ -165,9 +126,9 @@ board-game-buddy/
    python manage.py runserver
    ```
 
-9. **Open a browser and go to:** [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+App will be available at http://127.0.0.1:8000/
 
-### Running Tests
+## Testing
 
 To run the test suite, use the following command:
 
@@ -175,18 +136,11 @@ To run the test suite, use the following command:
 python manage.py test
 ```
 
----
-
 ## Usage
 
-1. **Sign up** and log in to start using the application.
-2. **Add your board games** via the "Add Game" feature.
-3. **View and borrow games** listed by other users.
-4. **Track your borrowed games** and return them when done.
-5. **View borrowing history** and manage your lending activity.
-
----
-
-## License
-
-This project is for educational and personal use. Feel free to contribute! 😊
+1. Sign up and log in.
+2. Add your own board games or browse existing ones.
+3. View game details by category or from the homepage.
+4. Borrow up to 3 games at a time.
+5. Return games when finished.
+6. Track your lending and borrowing history.
