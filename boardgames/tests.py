@@ -15,6 +15,7 @@ class SimpleTests(TestCase):
         )
         self.assertEqual(str(category), "Strategy")
 
+
 class ModelTests(TestCase):
     def test_game_creation(self):
         category = Category.objects.create(name="Party", description="Party games")
@@ -49,7 +50,9 @@ class ModelTests(TestCase):
         self.assertFalse(Loan.can_borrow_more(user))
 
     def test_game_form_valid(self):
-        category = Category.objects.create(name="Deck Builder", description="Deck building games")
+        category = Category.objects.create(
+            name="Deck Builder", description="Deck building games"
+        )
         form_data = {
             "title": "Dominion",
             "category": category.id,
@@ -58,6 +61,7 @@ class ModelTests(TestCase):
             "min_age": "13+",
         }
         from .forms import GameForm
+
         form = GameForm(data=form_data)
         self.assertTrue(form.is_valid())
 
@@ -70,7 +74,9 @@ class ViewTests(TestCase):
 
     def test_game_detail_view_status_code(self):
         user = User.objects.create_user(username="tester")
-        category = Category.objects.create(name="Abstract", description="Abstract games")
+        category = Category.objects.create(
+            name="Abstract", description="Abstract games"
+        )
         game = Game.objects.create(
             title="Azul",
             category=category,
