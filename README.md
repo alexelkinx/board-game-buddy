@@ -2,7 +2,7 @@
 
 ## Overview
 
-**Board Game Buddy** is a web application designed to help groups of friends manage their board game collections and lending activities. The application keeps track of board games, users (gamers), and loan statuses. It allows users to:
+**Board Game Buddy** is a Django-based web application designed to help groups of friends manage their board game collections and lending activities. The application keeps track of board games, users (gamers), and loan statuses. It allows users to:
 
 - Register and manage their accounts.
 - Add, edit, and delete their board games.
@@ -15,10 +15,49 @@ The system ensures a gamer cannot borrow more than three games simultaneously, p
 
 ---
 
+## Technologies Used
+
+- Python 3.x
+- Django
+- SQLite
+- HTML5, CSS3
+- Bootstrap 5
+
+## Screenshots
+
+<h3 align="center">Home Page</h3>
+
+![Home Page](assets/home_page.png)
+
+---
+
+<h3 align="center">Category List</h3>
+
+![Category List](assets/category_list.png)
+
+---
+
+<h3 align="center">Game List in Category</h3>
+
+![Game List](assets/game_list.png)
+
+---
+
+<h3 align="center">Game Detail Page</h3>
+
+![Game Detail](assets/game_detail.png)
+
+---
+
+<h3 align="center">Registration Page</h3>
+
+![Registration Page](assets/reg_page.png)
+
 ## Directory Structure
 
 ```
 board-game-buddy/
+├── assets/                         # Screenshots used in README
 ├── bgb_project/                    # Django project folder
 │   ├── __init__.py
 │   ├── asgi.py                     # ASGI configuration
@@ -33,7 +72,7 @@ board-game-buddy/
 │   ├── static/                     # Static files for the boardgames app
 │   │   ├── images/
 │   │   │   └── logo.png
-│   │   └── favicin.ico
+│   │   └── favicon.ico
 │   ├── templates/                  # Templates for the boardgames app
 │   │   └── boardgames/
 │   │       ├── base.html
@@ -79,9 +118,17 @@ board-game-buddy/
 
 3. **Activate the virtual environment**:
 
-   ```bash
-   source .venv/bin/activate # On macOS/Linux
-   ```
+   - On macOS and Linux:
+
+     ```bash
+     source .venv/bin/activate
+     ```
+
+   - On Windows:
+
+     ```bash
+     .venv\Scripts\activate
+     ```
 
 4. **Install dependencies**:
 
@@ -114,11 +161,7 @@ board-game-buddy/
    python manage.py runserver
    ```
 
-9. **Access the application**:
-
-   ```bash
-   Open a browser and go to `http://127.0.0.1:8000/`.
-   ```
+9. **Open a browser and go to:** [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 ---
 
