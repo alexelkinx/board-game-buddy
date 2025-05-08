@@ -16,6 +16,7 @@
 - Browse games by category
 - Borrow/return with a 3-game limit
 - Timestamps for tracking activity
+- Built-in unit tests with Django's testing framework
 
 ---
 
@@ -126,14 +127,21 @@ The project follows standard Django structure, including:
    python manage.py runserver
    ```
 
-App will be available at http://127.0.0.1:8000/
+App will be available at http://localhost:8000/
 
 ## Testing
 
-To run the test suite, use the following command:
+This project includes basic unit tests using Django's built-in `TestCase` framework.  
+To run all tests, execute:
 
 ```bash
 python manage.py test
+```
+
+You can also test individual apps or modules by specifying the path:
+
+```bash
+python manage.py test boardgames.tests
 ```
 
 ## Usage
