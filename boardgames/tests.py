@@ -10,6 +10,7 @@ class SimpleTests(TestCase):
     def test_home_view_status_code(self):
         response = self.client.get(reverse("boardgames:home"))
         self.assertEqual(response.status_code, 200)
+
     def test_category_creation(self):
         category = Category.objects.create(
             name="Strategy", description="Strategy games"
