@@ -23,6 +23,10 @@ The system ensures a gamer cannot borrow more than three games simultaneously, p
 - HTML5, CSS3
 - Bootstrap 5
 
+🛠️ The project also uses Django's built-in testing framework (`TestCase`) for basic unit tests.
+
+---
+
 ## Screenshots
 
 <h3 align="center">Home Page</h3>
@@ -162,6 +166,14 @@ board-game-buddy/
    ```
 
 9. **Open a browser and go to:** [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+### Running Tests
+
+To run the test suite, use the following command:
+
+```bash
+python manage.py test
+```
 
 ---
 
